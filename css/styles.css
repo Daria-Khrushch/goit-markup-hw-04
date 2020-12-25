@@ -192,7 +192,35 @@ p {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
+.team-member > .text {
+  margin-bottom: 16px;
+}
+.team-icons > .item:not(:last-child) {
+  margin-right: 10px;
+}
+.team-icons > .item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.item > .link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.item > .link {
+  color: #afb1b8;
+}
+.master-icon {
+  fill: currentColor;
+}
+.item > .link:hover {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
 /* Our-Clients */
 .our-clients {
   padding-bottom: 94px;
@@ -431,4 +459,10 @@ address {
 }
 .footer .item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+/* Common icons */
+.master-icon {
+  width: 20px;
+  height: 20px;
 }
