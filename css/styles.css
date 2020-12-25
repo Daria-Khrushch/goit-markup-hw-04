@@ -192,6 +192,33 @@ p {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+
+/* Our-Clients */
+
+.our-clients {
+  padding-bottom: 94px;
+  padding-top: 94px;
+  text-align: center;
+  align-items: center;
+}
+.clients {
+  display: inline-flex;
+  margin-top: 50px;
+}
+.client {
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.client:focus,
+.client:hover {
+  border-color: var(--accent-color);
+}
+.client:not(:last-child) {
+  margin-right: 30px;
+}
 /* Стили для portfolio.html */
 
 .title-portfolio {
