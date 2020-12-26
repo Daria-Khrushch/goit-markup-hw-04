@@ -234,6 +234,7 @@ p {
   justify-content: center;
 }
 .client {
+  color: #afb1b8;
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
@@ -242,14 +243,13 @@ p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #afb1b8;
 }
 .client:focus,
 .client:hover {
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
-.client:not(:last-child) {
+.clients > .item:not(:last-child) {
   margin-right: 30px;
 }
 .client-icon {
