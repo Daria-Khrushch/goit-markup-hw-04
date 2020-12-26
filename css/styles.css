@@ -242,20 +242,18 @@ p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  color: #afb1b8;
 }
 .client:focus,
 .client:hover {
   border-color: var(--accent-color);
+  color: var(--accent-color);
 }
 .client:not(:last-child) {
   margin-right: 30px;
 }
 .client-icon {
-  fill: #afb1b8;
-}
-.client-icon:hover,
-.client-icon:focus {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 /* Стили для portfolio.html */
 
@@ -457,8 +455,47 @@ address {
 .footer-logo {
   margin-bottom: 20px;
 }
-.footer .item:not(:last-child) {
+.footer-contacts .item:not(:last-child) {
   margin-bottom: 9px;
+}
+.footer-join > p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+.footer > .container {
+  display: flex;
+}
+.footer-contacts {
+  margin-right: 70px;
+}
+.footer-join {
+  padding-top: 12px;
+}
+.footer-join > .list {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-icons > .item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-icon > .link {
+  color: var(--white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.master-icon {
+  fill: currentColor;
+}
+.item > .link:hover {
+  color: #ffffff;
+  background-color: var(--accent-color);
 }
 
 /* Common icons */
