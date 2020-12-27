@@ -231,7 +231,8 @@ p {
 .master-icon {
   fill: currentColor;
 }
-.item > .link:hover {
+.item > .link:hover,
+.item > .link:focus {
   color: #ffffff;
   background-color: var(--accent-color);
 }
@@ -327,10 +328,10 @@ button:focus {
   margin-bottom: 30px;
   border: 1px solid #ececec;
 }
-
 .portfolio-items {
   display: flex;
   flex-wrap: wrap;
+  box-sizing: border-box;
 }
 .portfolio-items > .item:nth-child(3n) {
   margin-right: 0;
@@ -338,13 +339,24 @@ button:focus {
 .portfolio-items > .item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
-.portfolio-items > .item:hover,
-.portfolio-items > .item:focus {
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.portfolio-link {
+  display: block;
 }
 .portfolio-text {
   padding: 20px 24px;
+}
+.portfolio-text > p {
+  color: var(--primary-text-color);
+}
+a {
+  text-decoration: none;
+}
+.portfolio-text > h3 {
 }
 .portfolio {
   padding-top: 92px;
@@ -511,7 +523,8 @@ address {
 .master-icon {
   fill: currentColor;
 }
-.item > .link:hover {
+.item > .link:hover,
+.item > .link:focus {
   color: #ffffff;
   background-color: var(--accent-color);
 }
