@@ -136,6 +136,20 @@ p {
 .advantages > .item {
   width: 270px;
 }
+.advantages-icon {
+  width: 70px;
+  height: 70px;
+}
+.icon-container {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--main-background-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Features */
 .section-title {
@@ -280,7 +294,7 @@ button {
   cursor: pointer;
 }
 button:hover,
-button :focus {
+button:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
   border: var(--accent-color);
@@ -324,7 +338,11 @@ button :focus {
 .portfolio-items > .item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
-
+.portfolio-items > .item:hover,
+.portfolio-items > .item:focus {
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
 .portfolio-text {
   padding: 20px 24px;
 }
